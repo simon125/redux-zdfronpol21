@@ -1,12 +1,7 @@
-import { combineReducers, configureStore, createSlice } from "@reduxjs/toolkit";
-
-const slice = createSlice({
-  initialState: 0,
-  name: "test",
-});
+import { configureStore } from "@reduxjs/toolkit";
 
 export const store = configureStore({
   reducer: {
-    temp: slice.reducer,
+    temp: 0,
   },
 });
