@@ -3,6 +3,17 @@ import { Increase } from "./Increase";
 import { Decrease } from "./Decrease";
 import { Output } from "./Output";
 
+/**
+ * Zadanie
+ *
+ * zadanie zbliżone do poprzedniego ale różni się tym że mamy większą elastyczność jeżeli chodzi o manipulacje
+ * counterem,
+ *
+ * żeby obsłużyc counter należy użyć reduxa oraz slice-a reduxowego jak poprzednio jednak tym razem
+ * akcje będą przyjmować tzw payload jako argument dzieki temu będziemy mogli określić
+ * o ile chcemy podnieść wartość naszego countera
+ */
+
 export const ComplexCounterWithRedux = () => {
   return (
     <article>
