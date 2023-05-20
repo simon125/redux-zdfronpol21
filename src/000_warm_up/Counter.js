@@ -22,3 +22,24 @@
  * użyj dostępnej struktury plików zaproponowanej w folderze 000_warm_up
  *
  */
+
+import React, { useState } from "react";
+import { Increase } from "./Increase";
+import { Output } from "./Output";
+import { Decrease } from "./Decrease";
+
+export const Counter = () => {
+  const [counter, setCounter] = useState(0);
+
+  return (
+    <article>
+      <p>Counter</p>
+      <Increase
+        cokolwiek={123}
+        onIncreaseClick={() => setCounter(counter + 1)}
+      />
+      <Output value={counter} />
+      <Decrease onDecreaseClick={() => setCounter(counter - 1)} />
+    </article>
+  );
+};
