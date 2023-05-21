@@ -11,6 +11,7 @@ import { CounterWithRedux } from "./002_basics/exercise000/CounterWithRedux";
 import { TodoList } from "./002_basics/exercise002/TodoList";
 import { Users } from "./002_basics/exercise003/Users";
 import { ComplexCounterWithRedux } from "./002_basics/exercise001/ComplexCounterWithRedux";
+import { Counter } from "./000_warm_up/Counter";
 
 function App() {
   return (
@@ -18,15 +19,7 @@ function App() {
       <Navigation />
       <main className="container">
         <Routes>
-          <Route
-            path="/"
-            element={
-              <article>
-                Zaimportuj komponent Counter do pliku App.js i wywołaj go tutaj
-                zamiast tego article
-              </article>
-            }
-          />
+          <Route path="/" element={<Counter />} />
           <Route path="/redux-setup" element={<article>Setup</article>} />
           <Route
             path="/basics"
@@ -55,3 +48,13 @@ function App() {
 }
 
 export default App;
+
+const Component = () => {
+  return (
+    <>
+      <div></div>
+      <div></div>
+      <div></div>
+    </>
+  );
+};
