@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { selectValue, decrement, increment } from "./counterSlice";
 
@@ -34,29 +34,26 @@ export const CounterWithRedux = () => {
   // const counter2 = useSelector((state) => state.counter2.value);
   // const counter2a = useSelector(selectValue);
 
-  const counter = useSelector(selectValue); // state=>state.counter2.value
-  const countePierwszy = useSelector((state) => state.counter.value);
-
+  const counter = useSelector(selectValue);
   const dispatch = useDispatch();
 
   return (
     <article>
-      <p>Stan countera pierwszego: {countePierwszy}</p>
       <p>CounterWithRedux</p>
       <button
         onClick={() => {
-          dispatch(increment(5));
+          dispatch(increment());
         }}
       >
-        +5
+        +1
       </button>
       <input type="text" value={counter} readOnly />
       <button
         onClick={() => {
-          dispatch(decrement(10));
+          dispatch(decrement());
         }}
       >
-        -10
+        -1
       </button>
     </article>
   );

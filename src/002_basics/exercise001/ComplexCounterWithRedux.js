@@ -11,7 +11,7 @@ import { Output } from "./Output";
  *
  * żeby obsłużyc counter należy użyć reduxa oraz slice-a reduxowego jak poprzednio jednak tym razem
  * akcje będą przyjmować tzw payload jako argument dzieki temu będziemy mogli określić
- * o ile chcemy podnieść wartość naszego countera
+ * o ile chcemy podnieść wartość naszego
  *
  * slice należy stworzyć w pliku complexCounterSlice.js (plik należy stowrzyć)
  * slice nie będzie się bardzo różnił od tego z zadania poprzedniego

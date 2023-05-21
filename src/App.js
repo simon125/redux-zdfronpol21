@@ -12,21 +12,29 @@ import { TodoList } from "./002_basics/exercise002/TodoList";
 import { Users } from "./002_basics/exercise003/Users";
 import { ComplexCounterWithRedux } from "./002_basics/exercise001/ComplexCounterWithRedux";
 import { Counter } from "./000_warm_up/Counter";
+import { CounterWithReduxExample } from "./001_setup/Counter";
+import { useState } from "react";
 
 function App() {
+  const [counter, setCounter] = useState(0);
   return (
     <>
       <Navigation />
       <main className="container">
         <Routes>
           <Route path="/" element={<Counter />} />
-          <Route path="/redux-setup" element={<article>Setup</article>} />
+          <Route
+            path="/redux-setup"
+            element={
+              <CounterWithReduxExample counter={counter} setCounter={counter} />
+            }
+          />
           <Route
             path="/basics"
             element={
               <>
                 <Example002 />
-                <CounterWithRedux />
+                <CounterWithRedux counter={counter} />
                 <ComplexCounterWithRedux />
                 <TodoList />
                 <Users />
