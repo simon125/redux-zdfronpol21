@@ -14,6 +14,7 @@ import { ComplexCounterWithRedux } from "./002_basics/exercise001/ComplexCounter
 import { Counter } from "./000_warm_up/Counter";
 import { CounterWithReduxExample } from "./001_setup/Counter";
 import { useState } from "react";
+import { CounterWithAsyncRedux } from "./003_intermediate/exercise000/CounterWithAsyncRedux";
 
 function App() {
   const [counter, setCounter] = useState(0);
@@ -46,6 +47,7 @@ function App() {
             element={
               <>
                 <Example003 />
+                <CounterWithAsyncRedux />
               </>
             }
           />
