@@ -1,6 +1,8 @@
 import React from "react";
 import { Form } from "./Form";
 import { List } from "./List";
+import { Metrics } from "./Metrics";
+import { Search } from "./Search";
 
 /**
  * Zadanie
@@ -28,6 +30,8 @@ export const TodoList = () => {
     <article>
       <p>TodoList</p>
       <Form />
+      <Metrics />
+      <Search />
       <List />
     </article>
   );
