@@ -15,6 +15,7 @@ import { Counter } from "./000_warm_up/Counter";
 import { CounterWithReduxExample } from "./001_setup/Counter";
 import { useState } from "react";
 import { CounterWithAsyncRedux } from "./003_intermediate/exercise000/CounterWithAsyncRedux";
+import { TodoListHomework } from "./004_homework/TodoList";
 
 function App() {
   const [counter, setCounter] = useState(0);
@@ -48,6 +49,14 @@ function App() {
               <>
                 <Example003 />
                 <CounterWithAsyncRedux />
+              </>
+            }
+          />
+          <Route
+            path="/homework-props-filters"
+            element={
+              <>
+                <TodoListHomework />
               </>
             }
           />

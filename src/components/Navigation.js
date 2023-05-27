@@ -76,6 +76,11 @@ export const Navigation = () => {
                 Intermediate
               </Link>
             </li>
+            <li style={lineItemStyle}>
+              <Link onClick={handleCloseClick} to="/homework-props-filters">
+                homework props filters
+              </Link>
+            </li>
           </ul>
         </article>
       </dialog>
